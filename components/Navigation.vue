@@ -24,7 +24,7 @@
 						:to="button.to"
 						class="hover:text-opacity-60"
 						:class="{
-							'inline-block px-10 py-4 bg-background rounded-[8px] text-green-shamrock':
+							'inline-block px-10 py-4 bg-dark-blue rounded-[8px] text-green-shamrock':
 								button.to === '/signup',
 							'text-white': button.to !== '/signup',
 						}"
