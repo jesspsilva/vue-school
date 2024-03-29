@@ -1,9 +1,10 @@
 <template>
 	<div class="bg-dark-blue">
 		<Navigation />
-		<main class="pl-[135px] pt-8">
+		<main class="mx-auto my-0 pt-8">
 			<Hero />
 			<Card />
+			<LogosWrapper />
 		</main>
 	</div>
 </template>
