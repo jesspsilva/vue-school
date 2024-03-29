@@ -1,5 +1,5 @@
 <template>
-	<div class="flex justify-center pr-20 pb-[54px] gap-[52px]">
+	<div class="flex items-start justify-center pr-20 pb-[54px] gap-[52px]">
 		<section
 			class="flex flex-col justify-between gap-10 max-w-[570px] pt-[68px]"
 		>
