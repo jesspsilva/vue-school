@@ -20,7 +20,13 @@ body {
 @layer base {
   h1 {
     @apply text-6xl;
-    @apply leading-[1.185];
+    @apply leading-11;
+    @apply font-bold;
+    @apply text-white;
+  }
+  h2 {
+    @apply text-[40px];
+    @apply leading-11;
     @apply font-bold;
     @apply text-white;
   }
@@ -34,7 +40,7 @@ body {
     @apply bg-green-shamrock;
     @apply text-dark-blue;
     @apply text-[16px];
-    @apply leading-[1.185];
+    @apply leading-11;
     @apply px-10;
     @apply py-5;
     @apply rounded-[10px];

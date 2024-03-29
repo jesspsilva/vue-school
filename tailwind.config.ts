@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         'dark-blue': '#212435',
         'green-shamrock': ' #0BD88F',
-        'peacot': '#2B2F44E5',
+        'peacot': '#2B2F44',
         'pink-watermelon': '#FF497580',
         'purple-eletric': '#4F08E680',
         'grey-rhythm': '#737B98',
@@ -19,6 +19,9 @@ module.exports = {
         'rubik': ['Rubik', 'sans-serif'],
         'rubic-italic': ['Rubik-Italic', 'sans-serif'],
       },
+      lineHeight: {
+        '11': '1.185',
+      }
     },
   },
   plugins: [],
