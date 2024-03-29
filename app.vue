@@ -1,5 +1,7 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+	<div class="bg-background">
+		<Navigation />
+	</div>
 </template>
+
+<style></style>
