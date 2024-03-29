@@ -16,3 +16,33 @@ body {
   font-family: 'rubik', sans-serif;
   line-height: 1;
 }
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+    @apply leading-[1.185];
+    @apply font-bold;
+    @apply text-white;
+  }
+  p {
+    @apply text-[22px];
+    @apply leading-[30px];
+    @apply font-normal;
+    @apply text-white;
+  }
+  .button-green {
+    @apply bg-green-shamrock;
+    @apply text-dark-blue;
+    @apply text-[16px];
+    @apply leading-[1.185];
+    @apply px-10;
+    @apply py-5;
+    @apply rounded-[10px];
+    @apply font-medium;
+
+    &:hover {
+      @apply opacity-80;
+      
+    }
+  }
+}
