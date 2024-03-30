@@ -1,5 +1,7 @@
 <template>
-	<article class="flex gap-10 p-10 rounded-[40px] max-w-[1170px] mx-auto my-0">
+	<article
+		class="flex gap-10 py-[64px] pl-10 pr-10 rounded-[30px] max-w-[1170px] mx-auto my-0"
+	>
 		<div class="flex items-center pr-[66px] pl-[79px]">
 			<img
 				src="/images/logo.svg"
@@ -9,12 +11,12 @@
 		</div>
 		<header class="flex flex-col gap-8">
 			<h2>About Vue School corporate training</h2>
-			<p>
+			<h4>
 				School is the #1 training resource for Vue.js and has provided the most
 				comprehensive Vue.js video library in the world to over 140,000
 				developers. Private individuals and small to enterprise companies have
 				used our services to develop their skills since 2016.
-			</p>
+			</h4>
 		</header>
 	</article>
 </template>

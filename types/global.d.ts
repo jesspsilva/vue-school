@@ -14,3 +14,15 @@ declare interface IPricingCard {
   },
   monthlySeatPrice: number
 }
+
+declare interface ICoursesDetails {
+  number: number;
+  icon: string;
+  iconLabel: string;
+}
+
+declare interface IFeature {
+  available: boolean;
+  label: string;
+  featured: boolean;
+}

@@ -32,7 +32,7 @@
 					>
 					<div class="flex gap-2.5 justify-center items-center">
 						<img :src="lesson.icon" :alt="lesson.iconLabel" />
-						<small>{{ lesson.iconLabel }}</small>
+						<p>{{ lesson.iconLabel }}</p>
 					</div>
 				</li>
 			</ul>
@@ -43,19 +43,19 @@
 <script setup lang="ts">
 const lessonsDetails = [
 	{
-		number: "763",
+		number: 763,
 		icon: "/images/play.svg",
 		iconLabel: "Video lessons",
 	},
 	{
-		number: "40",
+		number: 40,
 		icon: "/images/book.svg",
 		iconLabel: "Courses",
 	},
 	{
-		number: "64",
+		number: 64,
 		icon: "/images/clock.svg",
 		iconLabel: "15 Hours",
 	},
-];
+] as ICoursesDetails[];
 </script>

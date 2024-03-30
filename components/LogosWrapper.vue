@@ -20,5 +20,5 @@ const logos = [
 	{ src: "/images/google.svg", alt: "google logo" },
 	{ src: "/images/google.svg", alt: "google logo" },
 	{ src: "/images/google.svg", alt: "google logo" },
-];
+] as ILogo[];
 </script>
