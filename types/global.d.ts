@@ -26,3 +26,15 @@ declare interface IFeature {
   label: string;
   featured: boolean;
 }
+
+declare interface IWorkshop {
+  date: string,
+  live: boolean,
+  duration: string;
+  title: string;
+  description: string;
+  teacher: {
+    name: string;
+    avatar: string;
+  }
+}

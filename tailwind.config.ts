@@ -17,7 +17,8 @@ module.exports = {
         'blue-aqua': '#00F0FF',
         'lime': '#0CD890',
         'tory-blue': '#A0A8C3',
-        'black-russian': '#0E0E1033'
+        'black-russian': '#0E0E1033',
+        'ghost-white': '#F3F5FF',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
