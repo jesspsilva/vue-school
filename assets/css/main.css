@@ -29,14 +29,25 @@ body {
     @apply leading-11;
     @apply font-bold;
     @apply text-white;
-    @apply tracking-[0.9px];
+  }
+  h3 {
+    @apply text-2xl;
+    @apply leading-11;
+    @apply font-medium;
+    @apply text-white;
   }
   p {
     @apply text-[22px];
     @apply leading-[30px];
     @apply font-normal;
+    @apply text-[#F3F5FF];
+  }
+  small {
+    @apply text-[14px];
+    @apply leading-11;
+    @apply font-normal;
     @apply text-white;
-    @apply tracking-[0.37px];
+    @apply tracking-[0.27px];
   }
   .button-green {
     @apply bg-green-shamrock;

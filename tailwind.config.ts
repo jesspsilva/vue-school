@@ -13,7 +13,9 @@ module.exports = {
         'pink-watermelon': '#FF497580',
         'purple-eletric': '#4F08E680',
         'grey-rhythm': '#737B98',
-        'blue-eletric': '#01F0FD'
+        'blue-eletric': '#01F0FD',
+        'blue-aqua': '#00F0FF',
+        'lime': '#0CD890',
       },
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif'],
