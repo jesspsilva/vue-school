@@ -1,6 +1,7 @@
 declare interface ILogo {
   alt: string;
   src: string;
+  href?: string;
 }
 
 declare interface IPricingCard {
@@ -43,4 +44,12 @@ declare interface INavigationItem {
   label: string;
   to: string;
   children: INavigationItem[];
+}
+
+declare interface IFooterItems {
+  title: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
 }

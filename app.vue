@@ -10,6 +10,7 @@
 				<PricingCardsWrapper />
 			</div>
 			<WorkshopsWrapper />
+			<Footer class="max-w-[1170px] mx-auto my-0" />
 		</main>
 	</div>
 </template>
