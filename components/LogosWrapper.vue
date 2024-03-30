@@ -1,7 +1,5 @@
 <template>
-	<section
-		class="max-w-[1170px] grid grid-cols-6 gap-y-12 gap-x-[30px] py-[72px] mx-auto"
-	>
+	<section class="grid grid-cols-6 gap-y-12 gap-x-[30px] py-[72px] mx-auto">
 		<img
 			v-for="logo in logos"
 			:key="logo.src"

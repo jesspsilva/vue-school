@@ -1,6 +1,6 @@
 <template>
 	<article
-		class="flex gap-10 py-[64px] pl-10 pr-10 rounded-[30px] max-w-[1170px] mx-auto my-0"
+		class="flex gap-10 py-[64px] pl-10 pr-10 rounded-[30px] mx-auto my-0"
 	>
 		<div class="flex items-center pr-[66px] pl-[79px]">
 			<img

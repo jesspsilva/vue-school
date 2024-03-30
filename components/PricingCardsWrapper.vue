@@ -1,5 +1,5 @@
 <template>
-	<div class="max-w-[1170px] mx-auto my-0 pt-[82px]">
+	<div class="mx-auto my-0 pt-[82px]">
 		<h1
 			class="text-[#F3F5FF] max-w-[752px] text-center mx-auto my-0 pb-[120px]"
 		>

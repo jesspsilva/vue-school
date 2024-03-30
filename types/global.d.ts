@@ -38,3 +38,9 @@ declare interface IWorkshop {
     avatar: string;
   }
 }
+
+declare interface INavigationItem {
+  label: string;
+  to: string;
+  children: INavigationItem[];
+}

@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="max-w-[1170px] mx-auto my-0 grid grid-cols-2 items-center py-[118px] pr-[5px]"
+		class="mx-auto my-0 grid grid-cols-2 items-center py-[118px] pr-[5px]"
 	>
 		<header class="flex flex-col gap-3.5">
 			<h3
