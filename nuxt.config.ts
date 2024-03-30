@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     families: {
       Rubik: {
         wght: [400, 500, 600, 700],
+      },
+      Inter: {
+        wght: [400],
       }
     }
   }

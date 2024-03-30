@@ -6,6 +6,7 @@
 			<Card />
 			<LogosWrapper />
 			<CoursesCounter />
+			<PricingCardsWrapper />
 		</main>
 	</div>
 </template>

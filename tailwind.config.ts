@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue': '#212435',
-        'green-shamrock': ' #0BD88F',
+        'green-shamrock': '#0BD88F',
         'peacot': '#2B2F44',
         'pink-watermelon': '#FF497580',
         'purple-eletric': '#4F08E680',
@@ -16,10 +16,11 @@ module.exports = {
         'blue-eletric': '#01F0FD',
         'blue-aqua': '#00F0FF',
         'lime': '#0CD890',
+        'tory-blue': '#A0A8C3',
+        'black-russian': '#0E0E1033'
       },
       fontFamily: {
-        'rubik': ['Rubik', 'sans-serif'],
-        'rubic-italic': ['Rubik-Italic', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       lineHeight: {
         '11': '1.185',
