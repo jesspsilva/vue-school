@@ -16,3 +16,19 @@
 		</main>
 	</div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+	title: "Vue School",
+	ogTitle: "Vue Schoo Site",
+	description: "This is Vue School site.",
+	ogDescription: "his is Vue School site.",
+	ogImage: "/favicon.png",
+});
+
+useHead({
+	title: "Vue School",
+	meta: [{ name: "description", content: "Vue School" }],
+	link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+});
+</script>

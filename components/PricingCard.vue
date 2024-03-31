@@ -20,6 +20,7 @@
 						<div class="flex gap-4">
 							<img
 								:src="`/images/${feature.available ? 'check' : 'cross'}.svg`"
+								alt="Feature state icon"
 							/>
 							<p
 								class="leading-5 tracking-normal"
@@ -30,7 +31,11 @@
 								{{ feature.label }}
 							</p>
 						</div>
-						<img v-if="feature.available" src="/images/info.svg" />
+						<img
+							v-if="feature.available"
+							src="/images/info.svg"
+							alt="Feature available icon"
+						/>
 					</li>
 				</ul>
 			</section>
