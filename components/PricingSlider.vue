@@ -17,9 +17,11 @@
 				<p class="font-medium text-grey-rhythm">20</p>
 			</footer>
 		</main>
-		<footer class="grid grid-cols-2 items-center">
+		<footer
+			class="flex items-center justify-between max-[1024px]:justify-start max-[1024px]:gap-5"
+		>
 			<div
-				class="bg-black-russian rounded-lg flex justify-between items-center py-[3px] px-3.5"
+				class="bg-black-russian rounded-lg flex justify-between items-center gap-2.5 py-[3px] px-3.5"
 			>
 				<img src="/images/group.svg" alt="Seats icon" />
 				<h4 class="text-[26px] font-bold">{{ seats }}</h4>

@@ -1,13 +1,13 @@
 <template>
-	<div class="min-w-[570px] pb-[200px]">
+	<div class="min-w-[570px] max-[640px]:min-w-full">
 		<header
-			class="flex py-[22px] px-[35px] items-center gap-3 rounded-t-[30px] bg-gradient-to-r from-purple-eletric to-pink-watermelon to-96.56%"
+			class="flex py-[22px] px-[35px] items-center gap-3 rounded-t-[30px] bg-gradient-to-r from-purple-eletric to-pink-watermelon to-96.56% max-[640px]:px-[16px] max-[640px]:py-[24px]"
 		>
 			<img src="/images/calendar.svg" alt="calendar icon" />
 			<h6 class="font-medium">{{ data.date }}</h6>
 		</header>
 		<main
-			class="bg-peacot/90 rounded-b-[30px] py-[34px] pl-[34px] flex flex-col gap-5"
+			class="bg-peacot/90 rounded-b-[30px] py-[34px] pl-[34px] flex flex-col gap-5 max-[640px]:px-[16px] max-[640px]:py-[24px]"
 		>
 			<header class="flex items-start gap-[33px]">
 				<div v-if="data.live" class="flex gap-3 items-center">

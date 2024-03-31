@@ -1,23 +1,32 @@
 <template>
-	<section
-		class="max-w-[1170px] mx-auto my-0 flex justify-between items-center pb-[72px]"
-	>
-		<h1>Available Workshops</h1>
-		<button class="primary-button">See all the workshops</button>
-	</section>
-	<main
-		class="flex overflow-x-scroll no-scrollbar gap-[30px] pl-[15.5%] pr-[30px]"
-		@mousedown="startDrag"
-		@touchstart="startDrag"
-		ref="main"
-	>
-		<WorkshopCard
-			v-for="(workshop, index) in workshops"
-			:key="index"
-			:data="workshop"
-			class="child"
-		/>
-	</main>
+	<div class="pb-[200px] max-[1024px]:pb-[140px]">
+		<section
+			class="max-w-[1170px] mx-auto my-0 flex justify-between items-center pb-[72px] max-[1024px]:justify-center max-[1024px]:text-center"
+		>
+			<h1>Available Workshops</h1>
+			<button class="primary-button max-[1024px]:hidden">
+				See all the workshops
+			</button>
+		</section>
+		<main
+			class="flex overflow-x-scroll no-scrollbar gap-[30px] pl-[15.5%] pr-[30px] max-[1024px]:pl-[10%] max-[640px]:pl-0 max-[640px]:pr-0"
+			@mousedown="startDrag"
+			@touchstart="startDrag"
+			ref="main"
+		>
+			<WorkshopCard
+				v-for="(workshop, index) in workshops"
+				:key="index"
+				:data="workshop"
+				class="child"
+			/>
+		</main>
+		<button
+			class="primary-button min-[1024px]:hidden mt-[56px] mx-auto mb-[0] flex"
+		>
+			See all the workshops
+		</button>
+	</div>
 </template>
 
 <script lang="ts">

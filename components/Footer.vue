@@ -1,10 +1,14 @@
 <template>
-	<div class="pb-[131px] flex gap-[130px]">
-		<div>
+	<div
+		class="pb-[131px] flex gap-[130px] max-[1024px]:flex-col max-[1024px]:justify-center"
+	>
+		<div
+			class="max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:items-center max-[640px]:text-center"
+		>
 			<img
 				src="/images/logo_complete.svg"
 				alt="logo"
-				class="min-w-[268px] pb-[85px]"
+				class="w-[268px] pb-[85px]"
 			/>
 			<h6 class="pb-[61px]">
 				Thanks to fine people like you, Vue School can proudly sponsor Evan and
@@ -13,7 +17,7 @@
 			<h4 class="font-medium uppercase text-grey-rhythm pb-[37px]">
 				Follow us in social media
 			</h4>
-			<ul class="flex gap-[42px]">
+			<ul class="flex gap-[42px] max-[640px]:gap-2">
 				<li v-for="logo in mediaLogos" class="flex">
 					<a
 						:href="logo.href"
@@ -28,9 +32,11 @@
 				</li>
 			</ul>
 		</div>
-		<div class="flex gap-[30px]">
+		<div
+			class="flex gap-[30px] max-[1024px]:justify-center max-[640px]:flex-col max-[640px]:items-center"
+		>
 			<ul class="flex flex-col gap-[30px] min-w-[270px]">
-				<li v-for="item in firstColumn">
+				<li v-for="item in firstColumn" class="max-[640px]:text-center">
 					<h4 class="font-medium uppercase text-grey-rhythm pb-5">
 						{{ item.title }}
 					</h4>
@@ -44,7 +50,7 @@
 				</li>
 			</ul>
 			<ul class="flex flex-col gap-[30px] min-w-[270px]">
-				<li v-for="item in secondColumn">
+				<li v-for="item in secondColumn" class="max-[640px]:text-center">
 					<h4 class="font-medium uppercase text-grey-rhythm pb-5">
 						{{ item.title }}
 					</h4>

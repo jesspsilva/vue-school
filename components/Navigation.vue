@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-row gap-[78px] justify-between px-12 py-5 leading-6">
 		<img src="/images/logo_complete.svg" alt="logo" />
-		<nav class="flex items-center flex-1">
+		<nav class="flex items-center flex-1 max-[1024px]:hidden">
 			<ul class="flex flex-row justify-between gap-[18px]">
 				<li v-for="route in routes">
 					<NuxtLink :to="route.to" class="text-white hover:text-opacity-60 flex flex-row navigation-item">
@@ -11,7 +11,7 @@
 				</li>
 			</ul>
 		</nav>
-		<aside class="flex items-center">
+		<aside class="flex items-center max-[640px]:hidden">
 			<ul class="flex flex-row justify-start items-center gap-[30px]">
 				<li
 					v-for="button in signupButtons"

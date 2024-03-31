@@ -1,5 +1,7 @@
 <template>
-	<div class="pricing-card rounded-[30px] pt-10 pb-5 px-[23px] min-w-[370px]">
+	<div
+		class="pricing-card rounded-[30px] pt-10 pb-5 px-[23px] min-w-[370px] max-[1024px]:w-full max-[1024px]:px-10"
+	>
 		<header class="flex gap-4">
 			<img :src="`/images/${data.header.icon}.svg`" alt="Pricing header icon" />
 			<h4 class="font-bold">{{ data.header.title }}</h4>

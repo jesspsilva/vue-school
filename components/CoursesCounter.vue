@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="mx-auto my-0 grid grid-cols-2 items-center py-[118px] pr-[5px]"
+		class="mx-auto my-0 grid grid-cols-2 items-center py-[118px] pr-[5px] max-[1024px]:grid-cols-1 max-[1024px]:text-center max-[1024px]:gap-[30px] max-[1024px]:px-10"
 	>
 		<header class="flex flex-col gap-3.5">
 			<h3
@@ -20,7 +20,9 @@
 			</h1>
 		</header>
 		<aside>
-			<ul class="flex justify-end gap-[62px] mt-2">
+			<ul
+				class="flex justify-end gap-[62px] mt-2 max-[1024px]:justify-center max-[640px]:gap-10"
+			>
 				<li
 					v-for="lesson in lessonsDetails"
 					:key="lesson.number"

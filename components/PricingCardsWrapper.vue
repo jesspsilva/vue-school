@@ -11,7 +11,9 @@
 			>
 			Bundles
 		</h1>
-		<section class="flex gap-[30px] justify-between items-start pb-40">
+		<section
+			class="flex gap-[30px] justify-between items-start pb-40 max-[1024px]:flex-wrap max-[1024px]:justify-center"
+		>
 			<PricingCard v-for="card in pricingCards" :data="card" />
 		</section>
 	</div>
