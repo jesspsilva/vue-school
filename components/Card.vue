@@ -27,7 +27,7 @@ article {
 	background: linear-gradient(rgba(43, 47, 68, 0.9) 0 0) padding-box,
 		linear-gradient(
 				180deg,
-				rgba(255, 255, 255, 0.6) 2.17%,
+				rgba(255, 255, 255, 0.2) 2.17%,
 				rgba(255, 255, 255, 0) 54.05%
 			)
 			border-box;

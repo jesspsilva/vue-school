@@ -10,7 +10,7 @@
 				alt="logo"
 				class="w-[268px] pb-[85px]"
 			/>
-			<h6 class="pb-[61px]">
+			<h6 class="pb-[61px] max-[1024px]:text-center">
 				Thanks to fine people like you, Vue School can proudly sponsor Evan and
 				the future of Vue.js by being a Platinum Patreon
 			</h6>
