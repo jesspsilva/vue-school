@@ -1,7 +1,7 @@
 <template>
 	<div class="pb-[200px] max-[1024px]:pb-[140px]">
 		<section
-			class="max-w-[1170px] mx-auto my-0 flex justify-between items-center pb-[72px] max-[1024px]:justify-center max-[1024px]:text-center"
+			class="center flex justify-between items-center pb-[72px] max-[1024px]:justify-center max-[1024px]:text-center"
 		>
 			<h1>Available Workshops</h1>
 			<button class="primary-button max-[1024px]:hidden">

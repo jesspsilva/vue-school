@@ -126,5 +126,8 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-
+  .center {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 }
