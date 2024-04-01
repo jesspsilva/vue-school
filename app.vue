@@ -4,9 +4,7 @@
 		<main class="mx-auto my-0 pt-[32px]">
 			<div class="top-wrapper">
 				<Hero />
-				<div
-					class="max-w-[1170px] mx-auto my-0 max-[1024px]:mx-6 max-[640px]:mx-[15px]"
-				>
+				<div class="center max-[1024px]:mx-6 max-[640px]:mx-[15px]">
 					<Card />
 					<LogosWrapper class="max-[1024px]:hidden" />
 					<CoursesCounter />
@@ -14,14 +12,12 @@
 			</div>
 			<div class="bottom-wrapper">
 				<PricingCardsWrapper
-					class="max-w-[1170px] mx-auto my-0 max-[1024px]:mx-6 max-[640px]:mx-[15px]"
+					class="center max-[1024px]:mx-6 max-[640px]:mx-[15px]"
 				/>
 			</div>
 			<WorkshopsWrapper />
 		</main>
-		<Footer
-			class="max-w-[1170px] mx-auto my-0 max-[1024px]:mx-6 max-[640px]:mx-[15px]"
-		/>
+		<Footer class="center max-[1024px]:mx-6 max-[640px]:mx-[15px]" />
 	</div>
 </template>
 
