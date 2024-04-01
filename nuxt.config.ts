@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@element-plus/nuxt',
+    '@nuxtjs/storybook',
   ],
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -22,5 +23,10 @@ export default defineNuxtConfig({
         wght: [400],
       }
     }
-  }
+  },
+  storybook: {
+    url: 'http://localhost:6006',
+    storybookRoute: '/__storybook__',
+    port: 6006,
+  },
 })
