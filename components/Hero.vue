@@ -5,19 +5,26 @@
 		<section
 			class="flex flex-col justify-between gap-10 max-w-[570px] pt-[68px] max-[1024px]:text-center max-[1024px]:items-center"
 		>
-			<h1>
-				Complete
-				<span class="text-green-shamrock">Vue.js training</span> solutions for
-				companies
-			</h1>
-			<h4>
-				Training solutions designed for companies, agencies and organisations
-				with developers using or who are considering using the Vue.js framework
-			</h4>
-			<button class="primary-button max-w-44">Talk to Sales</button>
+			<h1 v-html="data.title"></h1>
+			<h4>{{ data.description }}</h4>
+			<button class="primary-button max-w-44">{{ data.cta }}</button>
 		</section>
 		<aside>
 			<img src="/images/hero.svg" alt="hero-image" class="w-full h-full" />
 		</aside>
 	</div>
 </template>
+
+<script setup lang="ts">
+const query = groq`*[_type == "hero"]`;
+
+const sanity = useSanity();
+
+const data = await useAsyncData(() => sanity.fetch(query)).then((res) => {
+	return {
+		title: res.data.value[0].title[0].children[0].text,
+		description: res.data.value[0].description[0].children[0].text,
+		cta: res.data.value[0].cta,
+	};
+});
+</script>

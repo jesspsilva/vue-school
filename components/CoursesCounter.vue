@@ -43,19 +43,25 @@
 </template>
 
 <script setup lang="ts">
+const query = groq`*[_type == "coursesCounter"]`;
+
+const sanity = useSanity();
+
+const { data } = await useAsyncData(() => sanity.fetch(query));
+
 const lessonsDetails = [
 	{
-		number: 763,
+		number: data.value[0].video_lessons,
 		icon: "/images/play.svg",
 		iconLabel: "Video lessons",
 	},
 	{
-		number: 40,
+		number: data.value[0].courses,
 		icon: "/images/book.svg",
 		iconLabel: "Courses",
 	},
 	{
-		number: 64,
+		number: data.value[0].hours,
 		icon: "/images/clock.svg",
 		iconLabel: "15 Hours",
 	},
