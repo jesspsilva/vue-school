@@ -6,7 +6,12 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@element-plus/nuxt',
     '@nuxtjs/storybook',
+    '@nuxtjs/sanity',
   ],
+  sanity: {
+    projectId: "kq560jzr",
+    apiVersion: "2024-03-11"
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {

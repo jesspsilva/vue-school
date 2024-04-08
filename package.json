@@ -12,6 +12,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@nuxtjs/sanity": "^1.11.0",
+    "@sanity/client": "^6.15.9",
     "element-plus": "^2.6.3",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",

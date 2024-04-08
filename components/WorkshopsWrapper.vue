@@ -31,69 +31,28 @@
 
 <script lang="ts">
 export default {
-	setup() {
-		const workshops = [
-			{
-				date: "December 14th - 11:00 AM (GMT-3)",
-				live: true,
-				duration: "15 hours",
-				title: "Vue.js Fundamentals",
-				description:
-					"A progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally...",
-				teacher: {
-					name: "Steve Popoola",
-					avatar: "avatar",
-				},
-			},
-			{
-				date: "December 14th - 11:00 AM (GMT-3)",
-				live: true,
-				duration: "15 hours",
-				title: "Vue 3 and Composition API",
-				description:
-					"Take a deep dive into the new and exciting features of Vue 3. Learn about Portals, Suspense, Composition API, Fragments, and much much more...",
-				teacher: {
-					name: "Steve Popoola",
-					avatar: "avatar",
-				},
-			},
-			{
-				date: "December 14th - 11:00 AM (GMT-3)",
-				live: true,
-				duration: "15 hours",
-				title: "Vue 3 and Composition API",
-				description:
-					"Take a deep dive into the new and exciting features of Vue 3. Learn about Portals, Suspense, Composition API, Fragments, and much much more...",
-				teacher: {
-					name: "Steve Popoola",
-					avatar: "avatar",
-				},
-			},
-			{
-				date: "December 14th - 11:00 AM (GMT-3)",
-				live: true,
-				duration: "15 hours",
-				title: "Vue 3 and Composition API",
-				description:
-					"Take a deep dive into the new and exciting features of Vue 3. Learn about Portals, Suspense, Composition API, Fragments, and much much more...",
-				teacher: {
-					name: "Steve Popoola",
-					avatar: "avatar",
-				},
-			},
-			{
-				date: "December 14th - 11:00 AM (GMT-3)",
-				live: true,
-				duration: "15 hours",
-				title: "Vue 3 and Composition API",
-				description:
-					"Take a deep dive into the new and exciting features of Vue 3. Learn about Portals, Suspense, Composition API, Fragments, and much much more...",
-				teacher: {
-					name: "Steve Popoola",
-					avatar: "avatar",
-				},
-			},
-		] as IWorkshop[];
+	async setup() {
+		const query = groq`*[_type == "workshop"]`;
+
+		const sanity = useSanity();
+
+		const workshops = await useAsyncData(() => sanity.fetch(query)).then(
+			(res) => {
+				return res.data.value.map((workshop: any) => {
+					return {
+						date: new Date(workshop.date).toUTCString(),
+						live: workshop.live,
+						duration: workshop.duration,
+						title: workshop.title,
+						description: workshop.description[0].children[0].text,
+						teacher: {
+							name: workshop.teacher_name,
+							avatar: workshop.teacher_avatar_path,
+						},
+					};
+				}) as IWorkshop[];
+			}
+		);
 
 		let isDragging = false;
 		let startX = 0;
